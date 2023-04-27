@@ -1,0 +1,49 @@
+.LoginPage{
+    width: 300px;
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.TextColorOfLogin{
+    color: white;
+    font-size: 20px;
+}
+
+.form-group{
+    margin-top: 20px;   
+}
+
+.LoginButtonStyle{
+    margin-top: 20px;
+    width: 100px;
+    font-size: 16px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select{
+    width: 100% !important;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+.error-message{
+    color: red;
+    font-size: 0.9rem;
+}
+
+.form-text{
+    color: white!important;
+}
