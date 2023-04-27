@@ -4,8 +4,7 @@
   position: relative;
 }
 
-
-.overlay{
-  z-index: 9999;
+.overlay {
+  /* z-index: 9999; */
   position: relative;
 }
