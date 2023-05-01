@@ -1,8 +1,8 @@
-.btnStyle{
-    width: 100%;
-    padding: 5px 20px;
-    background-color: rgb(48, 47, 80);
-    color: white;
-    border-radius: 5px;
-    border: solid 1px rgb(48, 47, 80);  
+.custom-btn {
+  width: 100%;
+  padding: 5px 20px;
+  background-color: rgb(48, 47, 80);
+  color: white;
+  border-radius: 5px;
+  border: solid 1px rgb(48, 47, 80);
 }

@@ -26,32 +26,31 @@ const Login = () => {
   };
   return (
     <div className="LoginPage">
-      <form onSubmit={handleSubmit(LoginSubmit)}>
-        <div className="form-group">
-          <Input
-            id="username"
-            label="Username"
-            type="text"
-            placeholder="Enter User Name"
-            register={{ ...register("username") }}
-            errorMessage={errors.username?.message}
-          />
-          <small id="emailHelp" className="form-text">
-            We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div className="form-group">
-          <Input
-            id="password"
-            label="Password"
-            type="text"
-            placeholder="Enter Password"
-            register={{ ...register("password") }}
-            errorMessage={errors.password?.message}
-          />
-        </div>
-        <Btn classname="LoginButtonStyle" type="submit" text="Login"></Btn>
-      </form>
+      <div className="form-container">
+        <form onSubmit={handleSubmit(LoginSubmit)} className="form">
+          <div className="form-group">
+            <Input
+              id="username"
+              label="Username"
+              type="text"
+              placeholder="Enter User Name"
+              register={{ ...register("username") }}
+              errorMessage={errors.username?.message}
+            />
+          </div>
+          <div className="form-group">
+            <Input
+              id="password"
+              label="Password"
+              type="text"
+              placeholder="Enter Password"
+              register={{ ...register("password") }}
+              errorMessage={errors.password?.message}
+            />
+          </div>
+          <Btn classname="form__button" type="submit" text="Login"></Btn>
+        </form>
+      </div>
     </div>
   );
 };

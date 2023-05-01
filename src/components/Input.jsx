@@ -10,7 +10,7 @@ export default function Input({
 }) {
   return (
     <div className="input-group">
-      <label className="TextColorOfLogin" htmlFor={id}>
+      <label className="input-group__label" htmlFor={id}>
         {label}
       </label>
       <input

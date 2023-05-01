@@ -8,17 +8,19 @@
   flex-direction: column;
 }
 
-.TextColorOfLogin {
+/* .TextColorOfLogin {
   color: rgb(255, 255, 255);
   background-color: rgb(48, 47, 80);
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
   font-size: 20px;
-}
+} */
 
 .form-group {
-  margin-top: 20px;
   width: 263px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .LoginButtonStyle {
