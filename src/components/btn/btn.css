@@ -1,7 +1,7 @@
 .custom-btn {
   width: 100%;
   padding: 5px 20px;
-  background-color: rgb(48, 47, 80);
+  background: linear-gradient(to right, rgb(152, 189, 236), rgb(194, 237, 247));
   color: white;
   border-radius: 5px;
   border: solid 1px rgb(48, 47, 80);

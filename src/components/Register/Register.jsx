@@ -39,71 +39,73 @@ const Register = () => {
 
   return (
     <div className="RegisterPage">
-      <form onSubmit={handleSubmit(formSubmit)}>
-        <div className="form-group">
-          <Input
-            id="firstname"
-            label="FirstName"
-            type="text"
-            placeholder="Enter First Name"
-            register={{ ...register("firstname") }}
-            errorMessage={errors.firstname?.message}
-          />
-        </div>
-        <div className="form-group">
-          <Input
-            id="lastname"
-            label="Lastname"
-            type="text"
-            placeholder="Enter Last Name"
-            register={{ ...register("lastname") }}
-            errorMessage={errors.lastname?.message}
-          />
-        </div>
-        <div className="form-group">
-          <Input
-            id="username"
-            label="Username"
-            type="text"
-            placeholder="Enter User Name"
-            register={{ ...register("username") }}
-            errorMessage={errors.username?.message}
-          />
-        </div>
-        <div className="form-group">
-          <Input
-            id="email"
-            label="Email"
-            type="text"
-            placeholder="Enter Email"
-            register={{ ...register("email") }}
-            errorMessage={errors.email?.message}
-          />
-        </div>
-        <div className="form-group">
-          <Input
-            id="password"
-            label="Password"
-            type="text"
-            placeholder="Enter Password"
-            register={{ ...register("password") }}
-            errorMessage={errors.password?.message}
-          />
-        </div>
-        <div className="form-group">
-          <Input
-            id="confirmpwd"
-            label="Confirm Password"
-            type="text"
-            placeholder="confirm Password"
-            register={{ ...register("confirmpwd") }}
-            errorMessage={errors.confirmpwd?.message}
-          />
-        </div>
-        <button type="submit" className="btn  LoginButtonStyle">
-          Send
-        </button>
-      </form>
+      <div className="form-container2">
+        <form onSubmit={handleSubmit(formSubmit)}>
+          <div className="form-group">
+            <Input
+              id="firstname"
+              label="FirstName"
+              type="text"
+              placeholder="Enter First Name"
+              register={{ ...register("firstname") }}
+              errorMessage={errors.firstname?.message}
+            />
+          </div>
+          <div className="form-group">
+            <Input
+              id="lastname"
+              label="Lastname"
+              type="text"
+              placeholder="Enter Last Name"
+              register={{ ...register("lastname") }}
+              errorMessage={errors.lastname?.message}
+            />
+          </div>
+          <div className="form-group">
+            <Input
+              id="username"
+              label="Username"
+              type="text"
+              placeholder="Enter User Name"
+              register={{ ...register("username") }}
+              errorMessage={errors.username?.message}
+            />
+          </div>
+          <div className="form-group">
+            <Input
+              id="email"
+              label="Email"
+              type="text"
+              placeholder="Enter Email"
+              register={{ ...register("email") }}
+              errorMessage={errors.email?.message}
+            />
+          </div>
+          <div className="form-group">
+            <Input
+              id="password"
+              label="Password"
+              type="text"
+              placeholder="Enter Password"
+              register={{ ...register("password") }}
+              errorMessage={errors.password?.message}
+            />
+          </div>
+          <div className="form-group">
+            <Input
+              id="confirmpwd"
+              label="Confirm Password"
+              type="text"
+              placeholder="confirm Password"
+              register={{ ...register("confirmpwd") }}
+              errorMessage={errors.confirmpwd?.message}
+            />
+          </div>
+          <button type="submit" className="btn  LoginButtonStyle">
+            Send
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
