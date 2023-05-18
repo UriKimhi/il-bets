@@ -4,6 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
 export const NavBar = ({ expanded, setExpanded }) => {
+  function closeIfLink(e) {
+    if (e.target.classList.contains("nav-link")) {
+      setExpanded(false);
+    }
+  }
   return (
     <>
       <Navbar
@@ -22,7 +27,7 @@ export const NavBar = ({ expanded, setExpanded }) => {
             onClick={() => setExpanded(expanded ? false : "expanded")}
             aria-controls="responsive-navbar-nav"
           />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav" onClick={closeIfLink}>
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/">
                 ליגת החלומות
